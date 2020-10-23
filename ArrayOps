@@ -1,0 +1,38 @@
+public class Tester {
+  public static void main(String args[]) {
+int[][] arr = { {1,2,3}, {4,5,6}, {7,8,9} };
+System.out.println ();}
+
+public class rrayOps {
+
+public static int sum(int[] arr) {
+int sum = 0;
+for(int i=0; i<arr.length; i++)
+{sum += arr[i];}
+return sum;
+}
+
+public static  int largest(int[]arr) {
+int number = 0;
+for (int i=0; i<arr.length; i++)
+{if (number > i)
+number = i;}
+return number;}
+
+public static int[] sumRows(int[][] matrix) {
+int [] result = new int [matrix.length];
+for (int x =0; x < matrix.length; x ++)
+{ result [i] += sum (matrix [i] );}
+return result;}
+
+public static  int[] largestInRows(int[][] matrix){
+int [] result = new int [matrix.length];
+for (int x =0; x < matrix.length; x ++)
+{ result [i] += largest (matrix [i] );}
+return result;}
+
+public static  int sum(int[][] arr){
+int sum = 0
+for (int x =0; x < matrix.length; x ++)
+{ sum += sum (matrix [i] );}
+return result;}}
