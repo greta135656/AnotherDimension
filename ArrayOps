@@ -1,4 +1,4 @@
-public class rrayOps {
+public class ArrayOps {
 
 public static int sum(int[] arr) {
 int sum = 0;
