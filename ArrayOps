@@ -20,9 +20,9 @@ public static int[] sumRows(int[][] matrix) {
 int [] result = new int [matrix.length];
 for (int x =0; x < matrix.length; x ++) {
 
-result +=  sum(matrix[x]);
+result[x] =  sum(matrix[x]);
 if (result.length > 1 && x < result.length-1){
-Result += ", ";}}
+result += ", ";}}
 
 return result;}
 
@@ -31,21 +31,27 @@ return result;}
 public static  int[] largestInRows(int[][] matrix){
 int [] result = new int [matrix.length];
 for (int x =0; x < matrix.length; x ++)
-{ result += largest (matrix [x] );
+{ result [x] += largest (matrix [x] );
 if (result.length > 1 && x < result.length-1){
-Result += ", ";}}
+result += ", ";}}
 
 return result;}
 
 
 
+public static  int sum(int[][] arr){
+int sum = 0
+for (int x =0; x < matrix.length; x ++)
+{ sum += sum (matrix [x]);}
+return sum;}
+
 public static int[] sumCols(int[][] matrix) {
-int [] result = new int [matrix.length];
+int [] result = new int [matrix[0].length];
 int sum = 0;
 for (int x =0; x < matrix.length; x ++) {
 sum = 0;
 for (int y = 0; y < matrix[0].length; y ++) {
-sum= matrix[y][x];
+sum = matrix[y][x];
 result [x] = sum;
 
 if (matrix.length > 1 && x < matrix.length-1) {
@@ -53,30 +59,23 @@ result += ", ";}}}
 
 return result;}
 
-public static boolean isRowMagic(int[][] matrix)
-{
+public static boolean isRowMagic(int[][] matrix){
 for (i =0; i < matrix.length-1, i++){
-if sum(matrix[i]) !== sum(matrix[i + 1])
+if sum(matrix[i]) != sum(matrix[i + 1])
 return false;}
 return true;}
 
-public static boolean isLocationMagic(int[][] matrix)
-{
-if sum(sumCols(matrix)) = sum(sumRows(matrix))
-return true;
-return false;
-}
+public static boolean isColMagic(int[][] matrix){ 
+int [] result =  sumCols (matrix);
 
-public static boolean isColMagic(int[][] matrix)
-{ int [] result = sumCols (matrix);
+for (i=0; i<result.length -1 , i++)
 
-for (i=0; i<matrix.length -1 , i++)
-
-{if result [i] !== result[i +1]
+{if result [i] != result[i +1]
 return false;
 }
 return true;
 }
+
 
 public static boolean isLocationMagic(int[][] matrix, int row, int col){
 int [] nrow = matrix [row];
