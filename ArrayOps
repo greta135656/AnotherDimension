@@ -47,8 +47,5 @@ return sum;}
 
 public static int[] sumCols(int[][] matrix) {
 for (int i = 0; i < matrix.length; i++){
-if (matrix[i].length = matrix.length) {
-sumRows(matrix)
 }
 }
-}}
