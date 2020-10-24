@@ -39,18 +39,12 @@ return result;}
 
 
 
-public static  int sum(int[][] arr){
-int sum = 0
-for (int x =0; x < matrix.length; x ++)
-{ sum += sum (matrix [x]);}
-return sum;}
-
 public static int[] sumCols(int[][] matrix) {
 int [] result = new int [matrix.length];
 int sum = 0;
 for (int x =0; x < matrix.length; x ++) {
 sum = 0;
-for (int y = 0; y < matrix.length; y ++) {
+for (int y = 0; y < matrix[0].length; y ++) {
 sum= matrix[y][x];
 result [x] = sum;
 
