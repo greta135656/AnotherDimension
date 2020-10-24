@@ -77,3 +77,15 @@ return false;
 }
 return true;
 }
+
+public static boolean isLocationMagic(int[][] matrix, int row, int col){
+int [] nrow = matrix [row];
+int [] ncolumn = sumCols(matrix);
+int newrow = sum(nrow);
+int newcolumn = ncolumn[col]; 
+{
+if newrow == newcolumn
+return true;
+return false;}
+
+}
