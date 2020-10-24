@@ -51,8 +51,8 @@ int sum = 0;
 for (int x =0; x < matrix.length; x ++) {
 sum = 0;
 for (int y = 0; y < matrix.length; y ++) {
-sum[x]= matrix[y][x];
-result += sum;
+sum= matrix[y][x];
+result [x] = sum;
 
 if (matrix.length > 1 && x < matrix.length-1) {
 result += ", ";}}}
