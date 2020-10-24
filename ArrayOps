@@ -53,6 +53,13 @@ result += ", ";}}}
 
 return result;}
 
+public static boolean isRowMagic(int[][] matrix)
+{
+for (i =0; i < matrix.length-1, i++){
+if sum(matrix[i]) !== sum(matrix[i + 1])
+return false;}
+return true;}
+
 public static boolean isLocationMagic(int[][] matrix)
 {
 if sum(sumCols(matrix)) = sum(sumRows(matrix))
