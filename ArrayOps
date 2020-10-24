@@ -40,7 +40,7 @@ return result;}
 
 
 public static  int sum(int[][] arr){
-int sum = 0
+int sum = 0;
 for (int x =0; x < matrix.length; x ++)
 { sum += sum (matrix [x]);}
 return sum;}
@@ -60,17 +60,17 @@ result += ", ";}}}
 return result;}
 
 public static boolean isRowMagic(int[][] matrix){
-for (i =0; i < matrix.length-1, i++){
-if sum(matrix[i]) != sum(matrix[i + 1])
+for (i =0; i < matrix.length-1; i++){
+if (sum(matrix[i]) != sum(matrix[i + 1]))
 return false;}
 return true;}
 
 public static boolean isColMagic(int[][] matrix){ 
 int [] result =  sumCols (matrix);
 
-for (i=0; i<result.length -1 , i++)
+for (i=0; i<result.length -1; i++)
 
-{if result [i] != result[i +1]
+{if (result [i] != result[i +1])
 return false;
 }
 return true;
@@ -83,7 +83,7 @@ int [] ncolumn = sumCols(matrix);
 int newrow = sum(nrow);
 int newcolumn = ncolumn[col]; 
 {
-if newrow == newcolumn
+if (newrow == newcolumn)
 return true;
 return false;}
 
