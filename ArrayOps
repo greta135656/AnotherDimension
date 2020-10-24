@@ -58,3 +58,10 @@ if (matrix.length > 1 && x < matrix.length-1) {
 result += ", ";}}}
 
 return result;}
+
+public static boolean isLocationMagic(int[][] matrix)
+{
+if sum(sumCols(matrix)) = sum(sumRows(matrix))
+return true;
+return false;
+}
