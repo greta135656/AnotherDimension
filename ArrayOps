@@ -66,3 +66,13 @@ if sum(sumCols(matrix)) = sum(sumRows(matrix))
 return true;
 return false;
 }
+
+public static boolean isColMagic(int[][] matrix)
+{ int [] result = sumCols (matrix);
+
+for (i=0; i<matrix[0].length-1, i++){
+if result [i] !== result[i +1]
+return false;
+}
+return true;
+}
