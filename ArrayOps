@@ -40,7 +40,8 @@ return result;}
 public static  int sum(int[][] arr){
 int sum = 0;
 for (int x =0; x < arr.length; x ++)
-{ sum += sum (arr [x]);}
+{ sum += sum (arr[x]);
+}
 return sum;}
 
 public static int[] sumCols(int[][] matrix) {
@@ -49,7 +50,7 @@ int sum = 0;
 for (int x = 0; x < matrix[0].length; x ++) {
 sum = 0;
 for (int y =0; y < matrix.length; y ++) {
-sum = matrix[y][x];
+sum += matrix[y][x];
 result [x] = sum;}
 }
 
